@@ -19,16 +19,3 @@ mongoose
     });
   })
   .catch((err) => console.log(err));
-
-//Use this func. to connect the mongoDB anf start the server
-// const starrtServer = async () => {
-//   try {
-//     await connectDB();
-//     app.listen(PORT, () => {
-//       console.log(`Server running on port ${PORT}`);
-//     });
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
-// starrtServer();
