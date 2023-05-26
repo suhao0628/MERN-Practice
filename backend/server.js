@@ -1,8 +1,16 @@
 const dotenv = require("dotenv").config();
 const express = require("express");
 const connectDB = require("./config/connectDB");
-const app = express();
 const mongoose = require("mongoose");
+
+const app = express();
+
+//Middleware
+app.use(express.json());
+// const logger = (req, res, next) => {
+//   console.log("Middle ran");
+//   console.log(req.method);
+// };
 
 //Routes
 app.get("/", (req, res) => {
